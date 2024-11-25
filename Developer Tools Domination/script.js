@@ -5,6 +5,7 @@ const dogs = [
 
 function makeGreen(){
     const p = document.querySelector("p");
+    
     p.style.color = "#BADA55";
     p.style.fontSize = "50px";
 }
@@ -34,6 +35,7 @@ console.info("Crocodiles eat 3-4 people per year");
 
 // Testing
 const p = document.querySelector("p");
+
 console.assert(p.classList.contains("paragraph"), "That is wrong!");
 console.assert(1 === 1, "This sentence was deleted when published");
 console.assert(1 === 0, "Look, you made a mistake, right?");
@@ -54,6 +56,7 @@ dogs.forEach(dog => {
     console.log(`${dog.name} is ${dog.age * 7} dog years old`);
     console.groupEnd(`${dog.name}`);
 });
+
 console.table(dogs);
 // console.table(dogs, ["age"]);
 
@@ -73,6 +76,7 @@ console.count("Steve");
 
 // timing
 console.time("fetching data");
+
 fetch("https://api.github.com/users/hrik-das")
     .then(data => data.json())
     .then(data => {

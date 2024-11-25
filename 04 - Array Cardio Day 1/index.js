@@ -76,6 +76,7 @@ const reduce = data.reduce((object, item) => {
     if(!object[item]){
         object[item] = 0;
     }
+    
     object[item]++;
     return object;
 }, {});

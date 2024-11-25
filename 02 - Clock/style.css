@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: Helvetica;
 }
+
 html{
     background: #abc7d3 url(./images/background.jpg);
     background-size: cover;
     text-align: center;
     font-size: 10px;
 }
+
 body{
     font-size: 2rem;
     flex: 1;
@@ -17,6 +19,7 @@ body{
     min-height: 100vh;
     align-items: center;
 }
+
 .clock{
     width: 30rem;
     height: 30rem;
@@ -28,12 +31,14 @@ body{
     padding: 2rem;
     box-shadow: 0 0 0px 4px rgba(0, 0, 0, .1), inset 0 0 0 3px #efefef, inset 0 0 10px #000000, 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .clock-face{
     position: relative;
     width: 100%;
     height: 100%;
     /* transform: translateY(-3px); */
 }
+
 .hand{
     position: absolute;
     top: 50%;
@@ -45,6 +50,7 @@ body{
     /* transition: all 0.05s; */
     transition-timing-function: cubic-bezier(0.9, 0.54, 0.26, 1.68);
 }
+
 .clock-face:after{
     content: "";
     position: absolute;
@@ -58,6 +64,7 @@ body{
     box-shadow: 0 0 0 2px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.2);
     transform: translate(-50%, -50%);
 }
+
 .hour-hand{
     width: 40%;
     height: 10px;
@@ -66,12 +73,14 @@ body{
     border-top-left-radius: 0.5em;
     transition: all 3s;
 }
+
 .min-hand{
     width: 45%;
     height: 5px;
     margin-top: -2.5px;
     transition: all 0.1s cubic-bezier(0.9, 0.54, 0.26, 1.68);
 }
+
 .second-hand{
     height: 2px;
     margin-top: -1px;
